@@ -300,6 +300,22 @@ http://github.com/necolas/css3-github-buttons
 color:#D4D4D4;
 }
 
+.button.disabled:hover,
+.button.disabled:focus,
+.button.disabled:active {
+    border-color: #d4d4d4;
+    border-bottom-color: #d4d4d4;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #fff;
+    color: #D4D4D4;
+    background-color: #ececec;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f4f4f4), to(#ececec));
+    background-image: -moz-linear-gradient(#f4f4f4, #ececec);
+    background-image: -o-linear-gradient(#f4f4f4, #ececec);
+    background-image: linear-gradient(#f4f4f4, #ececec);   
+}
+
+
 /* ------------------------------------------------------------------------------------------------------------- BUTTON GROUPS */
 
 /* ............................................................................................................. Standard */
