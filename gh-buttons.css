@@ -81,7 +81,7 @@ http://github.com/necolas/css3-github-buttons
     width: 12px; 
     height: 12px; 
     margin: 0 0.75em 0 -0.25em; 
-    background: url(gh-icons.png) 0 99px no-repeat;
+    background: url(../images/artpack/gh-icons.png) 0 99px no-repeat;
 }
 
 .button.arrowup.icon:before { background-position: 0 0; }
@@ -378,6 +378,17 @@ http://github.com/necolas/css3-github-buttons
 .button-group.minor-group .button:active,
 .button-group.minor-group .button.active {
     background-color: #3072b3;
+}
+
+
+.button-group.minor-group .button.danger:hover,
+.button-group.minor-group .button.danger:focus,
+.button-group.minor-group .button.danger:active {     
+    background-color: #dc5f59;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#dc5f59), to(#b33630));
+    background-image: -moz-linear-gradient(#dc5f59, #b33630);
+    background-image: -o-linear-gradient(#dc5f59, #b33630);
+    background-image: linear-gradient(#dc5f59, #b33630);
 }
 
 .button-group.minor-group .button.icon:before {
