@@ -22,6 +22,7 @@ http://github.com/necolas/css3-github-buttons
     cursor: pointer; 
     outline: none; 
     background-color: #ececec;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFf4f4f4, endColorstr=#FFececec); /*IE7,IE8*/
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f4f4f4), to(#ececec));
     background-image: -moz-linear-gradient(#f4f4f4, #ececec);
     background-image: -o-linear-gradient(#f4f4f4, #ececec);
@@ -48,6 +49,7 @@ http://github.com/necolas/css3-github-buttons
     text-shadow: -1px -1px 0 rgba(0,0,0,0.3); 
     color: #fff; 
     background-color: #3C8DDE;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF599bdc, endColorstr=#FF3072b3); /*IE7,IE8*/
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#599bdc), to(#3072b3));
     background-image: -moz-linear-gradient(#599bdc, #3072b3);
     background-image: -o-linear-gradient(#599bdc, #3072b3);
@@ -59,6 +61,7 @@ http://github.com/necolas/css3-github-buttons
     border-color: #2a65a0;
     border-bottom-color: #3884CF;
     background-color: #3072b3;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF3072b3, endColorstr=#FF599bdc); /*IE7,IE8*/
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3072b3), to(#599bdc));
     background-image: -moz-linear-gradient(#3072b3, #599bdc);
     background-image: -o-linear-gradient(#3072b3, #599bdc);
@@ -261,6 +264,7 @@ http://github.com/necolas/css3-github-buttons
     border-bottom-color: #a0302a;
     color: #fff; 
     background-color: #dc5f59;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFdc5f59, endColorstr=#FFb33630); /*IE7,IE8*/
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#dc5f59), to(#b33630));
     background-image: -moz-linear-gradient(#dc5f59, #b33630);
     background-image: -o-linear-gradient(#dc5f59, #b33630);
@@ -272,6 +276,7 @@ http://github.com/necolas/css3-github-buttons
     border-color: #a0302a;
     border-bottom-color: #bf4843;
     background-color: #b33630;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFb33630, endColorstr=#FFdc5f59); /*IE7,IE8*/
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#b33630), to(#dc5f59));
     background-image: -moz-linear-gradient(#b33630, #dc5f59);
     background-image: -o-linear-gradient(#b33630, #dc5f59);
