@@ -367,6 +367,11 @@
     border-bottom-left-radius: 0;
 }
 
+.button-group > .button:only-child,
+.button-group li:only-child .button {
+	border-radius: 0.2em;
+}
+
 /* Minor group
    ========================================================================== */
 
