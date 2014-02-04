@@ -1,0 +1,353 @@
+@import "gh-variables.less";
+
+.@{button_class} {
+    position: relative;
+    overflow: visible;
+    display: inline-block;
+    padding: 0.5em 1em;
+    border: 1px solid #d4d4d4;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 1px 1px 0 #fff;
+    font: 11px sans-serif;
+    color: #333;
+    white-space: nowrap;
+    cursor: pointer;
+    outline: none;
+    background-color: #ececec;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f4f4f4), to(#ececec));
+    background-image: -moz-linear-gradient(#f4f4f4, #ececec);
+    background-image: -ms-linear-gradient(#f4f4f4, #ececec);
+    background-image: -o-linear-gradient(#f4f4f4, #ececec);
+    background-image: linear-gradient(#f4f4f4, #ececec);
+    -moz-background-clip: padding; /* for Firefox 3.6 */
+    background-clip: padding-box;
+    border-radius: 0.2em;
+    /* IE hacks */
+    zoom: 1;
+    *display: inline;
+
+    &:hover,
+        &:focus,
+        &:active,
+        &.active {
+        border-color: #3072b3;
+        border-bottom-color: #2a65a0;
+        text-decoration: none;
+        text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
+        color: #fff;
+        background-color: #3c8dde;
+        background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#599bdc), to(#3072b3));
+        background-image: -moz-linear-gradient(#599bdc, #3072b3);
+        background-image: -o-linear-gradient(#599bdc, #3072b3);
+        background-image: linear-gradient(#599bdc, #3072b3);
+    }
+
+    &:active,
+        &.active {
+        border-color: #2a65a0;
+        border-bottom-color: #3884cd;
+        background-color: #3072b3;
+        background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3072b3), to(#599bdc));
+        background-image: -moz-linear-gradient(#3072b3, #599bdc);
+        background-image: -ms-linear-gradient(#3072b3, #599bdc);
+        background-image: -o-linear-gradient(#3072b3, #599bdc);
+        background-image: linear-gradient(#3072b3, #599bdc);
+    }
+
+    /* overrides extra padding on button elements in Firefox */
+    &::-moz-focus-inner {
+        padding: 0;
+        border: 0;
+    }
+
+    &.icon:before {
+        content: "";
+        position: relative;
+        top: 1px;
+        float:left;
+        width: 12px;
+        height: 12px;
+        margin: 0 0.75em 0 -0.25em;
+        background: url(gh-icons.png) 0 99px no-repeat;
+    }
+
+    &.arrowup.icon:before { background-position: 0 0; }
+    &.arrowup.icon:hover:before,
+        &.arrowup.icon:focus:before,
+        &.arrowup.icon:active:before { background-position: -12px 0; }
+
+    &.arrowdown.icon:before { background-position: 0 -12px; }
+    &.arrowdown.icon:hover:before,
+        &.arrowdown.icon:focus:before,
+        &.arrowdown.icon:active:before { background-position: -12px -12px; }
+
+    &.arrowleft.icon:before { background-position: 0 -24px; }
+    &.arrowleft.icon:hover:before,
+        &.arrowleft.icon:focus:before,
+        &.arrowleft.icon:active:before { background-position: -12px -24px; }
+
+    &.arrowright.icon:before { float:right; margin: 0 -0.25em 0 0.5em; background-position: 0 -36px; }
+    &.arrowright.icon:hover:before,
+        &.arrowright.icon:focus:before,
+        &.arrowright.icon:active:before { background-position: -12px -36px; }
+
+    &.approve.icon:before { background-position: 0 -48px; }
+    &.approve.icon:hover:before,
+        &.approve.icon:focus:before,
+        &.approve.icon:active:before { background-position: -12px -48px; }
+
+    &.add.icon:before { background-position: 0 -288px; }
+    &.add.icon:hover:before,
+        &.add.icon:focus:before,
+        &.add.icon:active:before { background-position: -12px -288px; }
+
+    &.remove.icon:before { background-position: 0 -60px; }
+    &.remove.icon:hover:before,
+        &.remove.icon:focus:before,
+        &.remove.icon:active:before { background-position: -12px -60px; }
+
+    &.log.icon:before { background-position: 0 -72px; }
+    &.log.icon:hover:before,
+        &.log.icon:focus:before,
+        &.log.icon:active:before { background-position: -12px -72px; }
+
+    &.calendar.icon:before { background-position: 0 -84px; }
+    &.calendar.icon:hover:before,
+        &.calendar.icon:focus:before,
+        &.calendar.icon:active:before { background-position: -12px -84px; }
+
+    &.chat.icon:before { background-position: 0 -96px; }
+    &.chat.icon:hover:before,
+        &.chat.icon:focus:before,
+        &.chat.icon:active:before { background-position: -12px -96px; }
+
+    &.clock.icon:before { background-position: 0 -108px; }
+    &.clock.icon:hover:before,
+        &.clock.icon:focus:before,
+        &.clock.icon:active:before { background-position: -12px -108px; }
+
+    &.settings.icon:before { background-position: 0 -120px; }
+    &.settings.icon:hover:before,
+        &.settings.icon:focus:before,
+        &.settings.icon:active:before { background-position: -12px -120px; }
+
+    &.comment.icon:before { background-position: 0 -132px; }
+    &.comment.icon:hover:before,
+        &.comment.icon:focus:before,
+        &.comment.icon:active:before { background-position: -12px -132px; }
+
+    &.fork.icon:before { background-position: 0 -144px; }
+    &.fork.icon:hover:before,
+        &.fork.icon:focus:before,
+        &.fork.icon:active:before { background-position: -12px -144px; }
+
+    &.like.icon:before { background-position: 0 -156px; }
+    &.like.icon:hover:before,
+        &.like.icon:focus:before,
+        &.like.icon:active:before { background-position: -12px -156px; }
+
+    &.favorite.icon:before { background-position: 0 -348px; }
+    &.favorite.icon:hover:before,
+        &.favorite.icon:focus:before,
+        &.favorite.icon:active:before { background-position: -12px -348px; }
+
+    &.home.icon:before { background-position: 0 -168px; }
+    &.home.icon:hover:before,
+        &.home.icon:focus:before,
+        &.home.icon:active:before { background-position: -12px -168px; }
+
+    &.key.icon:before { background-position: 0 -180px; }
+    &.key.icon:hover:before,
+        &.key.icon:focus:before,
+        &.key.icon:active:before { background-position: -12px -180px; }
+
+    &.lock.icon:before { background-position: 0 -192px; }
+    &.lock.icon:hover:before,
+        &.lock.icon:focus:before,
+        &.lock.icon:active:before { background-position: -12px -192px; }
+
+    &.unlock.icon:before { background-position: 0 -204px; }
+    &.unlock.icon:hover:before,
+        &.unlock.icon:focus:before,
+        &.unlock.icon:active:before { background-position: -12px -204px; }
+
+    &.loop.icon:before { background-position: 0 -216px; }
+    &.loop.icon:hover:before,
+        &.loop.icon:focus:before,
+        &.loop.icon:active:before { background-position: -12px -216px; }
+
+    &.search.icon:before { background-position: 0 -228px; }
+    &.search.icon:hover:before,
+        &.search.icon:focus:before,
+        &.search.icon:active:before { background-position: -12px -228px; }
+
+    &.mail.icon:before { background-position: 0 -240px; }
+    &.mail.icon:hover:before,
+        &.mail.icon:focus:before,
+        &.mail.icon:active:before { background-position: -12px -240px; }
+
+    &.move.icon:before { background-position: 0 -252px; }
+    &.move.icon:hover:before,
+        &.move.icon:focus:before,
+        &.move.icon:active:before { background-position: -12px -252px; }
+
+    &.edit.icon:before { background-position: 0 -264px; }
+    &.edit.icon:hover:before,
+        &.edit.icon:focus:before,
+        &.edit.icon:active:before { background-position: -12px -264px; }
+
+    &.pin.icon:before { background-position: 0 -276px; }
+    &.pin.icon:hover:before,
+        &.pin.icon:focus:before,
+        &.pin.icon:active:before { background-position: -12px -276px; }
+
+    &.reload.icon:before { background-position: 0 -300px; }
+    &.reload.icon:hover:before,
+        &.reload.icon:focus:before,
+        &.reload.icon:active:before { background-position: -12px -300px; }
+
+    &.rss.icon:before { background-position: 0 -312px; }
+    &.rss.icon:hover:before,
+        &.rss.icon:focus:before,
+        &.rss.icon:active:before { background-position: -12px -312px; }
+
+    &.tag.icon:before { background-position: 0 -324px; }
+    &.tag.icon:hover:before,
+        &.tag.icon:focus:before,
+        &.tag.icon:active:before { background-position: -12px -324px; }
+
+    &.trash.icon:before { background-position: 0 -336px; }
+    &.trash.icon:hover:before,
+        &.trash.icon:focus:before,
+        &.trash.icon:active:before { background-position: -12px -336px; }
+
+    &.user.icon:before { background-position: 0 -360px; }
+    &.user.icon:hover:before,
+        &.user.icon:focus:before,
+        &.user.icon:active:before { background-position: -12px -360px; }
+
+    &.primary {
+        font-weight: bold;
+    }
+
+    &.danger {
+        color: #900;
+    }
+
+    &.danger:hover,
+        &.danger:focus,
+        &.danger:active {
+        border-color: #b53f3a;
+        border-bottom-color: #a0302a;
+        color: #fff;
+        background-color: #dc5f59;
+        background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#dc5f59), to(#b33630));
+        background-image: -moz-linear-gradient(#dc5f59, #b33630);
+        background-image: -ms-linear-gradient(#dc5f59, #b33630);
+        background-image: -o-linear-gradient(#dc5f59, #b33630);
+        background-image: linear-gradient(#dc5f59, #b33630);
+    }
+
+    &.danger:active,
+        &.danger.active {
+        border-color: #a0302a;
+        border-bottom-color: #bf4843;
+        background-color: #b33630;
+        background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#b33630), to(#dc5f59));
+        background-image: -moz-linear-gradient(#b33630, #dc5f59);
+        background-image: -ms-linear-gradient(#b33630, #dc5f59);
+        background-image: -o-linear-gradient(#b33630, #dc5f59);
+        background-image: linear-gradient(#b33630, #dc5f59);
+    }
+
+    &.pill {
+        border-radius: 50em;
+    }
+
+    &.disable {
+        opacity: 0.5;
+    }
+
+    &.big {
+        font-size: 14px;
+    }
+
+    &.big.icon:before {
+        top: 0;
+    }
+
+}
+
+.@{button_group} {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* IE hacks */
+    zoom: 1;
+    *display: inline;
+}
+
+.@{button_class} + .@{button_class},
+.@{button_class} + .@{button_group},
+.@{button_group} + .@{button_class},
+.@{button_group} + .@{button_group} {
+    margin-left: 15px;
+}
+
+.@{button_group} li {
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+.@{button_group} .@{button_class} {
+    float: left;
+    margin-left: -1px;
+}
+
+.@{button_group} > .@{button_class}:not(:first-child):not(:last-child),
+.@{button_group} li:not(:first-child):not(:last-child) .@{button_class} {
+    border-radius: 0;
+}
+
+.@{button_group} > .@{button_class}:first-child,
+.@{button_group} li:first-child .@{button_class} {
+    margin-left: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.@{button_group} > .@{button_class}:last-child,
+.@{button_group} li:last-child > .@{button_class} {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.@{button_group}.minor-group .@{button_class} {
+    border: 1px solid #d4d4d4;
+    text-shadow: none;
+    background-image: none;
+    background-color: #fff;
+}
+
+.@{button_group}.minor-group .@{button_class}:hover,
+.@{button_group}.minor-group .@{button_class}:focus {
+    background-color: #599bdc;
+}
+
+.@{button_group}.minor-group .@{button_class}:active,
+.@{button_group}.minor-group .@{button_class}.active {
+    background-color: #3072b3;
+}
+
+.@{button_group}.minor-group .@{button_class}.icon:before {
+    opacity: 0.8;
+}
+
+.@{button_container} .@{button_class},
+.@{button_container} .@{button_group} {
+    vertical-align: top;
+}
