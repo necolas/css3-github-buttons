@@ -38,6 +38,11 @@
     *display: inline;
 }
 
+/* overrides padding for buttons with icons but no text */
+.button.no-text {
+  padding-right: 0px !important;
+}
+
 .button:hover,
 .button:focus,
 .button:active,
