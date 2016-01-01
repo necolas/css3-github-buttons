@@ -387,6 +387,17 @@
     background-color: #3072b3;
 }
 
+
+.button-group.minor-group .button.danger:hover,
+.button-group.minor-group .button.danger:focus,
+.button-group.minor-group .button.danger:active {     
+    background-color: #dc5f59;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#dc5f59), to(#b33630));
+    background-image: -moz-linear-gradient(#dc5f59, #b33630);
+    background-image: -o-linear-gradient(#dc5f59, #b33630);
+    background-image: linear-gradient(#dc5f59, #b33630);
+}
+
 .button-group.minor-group .button.icon:before {
     opacity: 0.8;
 }
