@@ -264,7 +264,8 @@
 
 .button.danger:hover,
 .button.danger:focus,
-.button.danger:active {
+.button.danger:active,
+.button.danger.active {
     border-color: #b53f3a;
     border-bottom-color: #a0302a;
     color: #fff;
