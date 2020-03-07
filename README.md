@@ -2,6 +2,10 @@
 
 ![unmaintained](http://img.shields.io/badge/status-unmaintained-red.png)
 
+This project is no longer maintained. Consider using [Primer](https://primer.style/css/components/buttons) instead.
+
+---
+
 CSS3 GitHub Buttons helps you easily create GitHub-style buttons from links, buttons, and inputs.
 
 Example: [necolas.github.io/css3-github-buttons/](http://necolas.github.io/css3-github-buttons/)
